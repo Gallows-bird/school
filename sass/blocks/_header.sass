@@ -1,0 +1,130 @@
+.header__row
+    min-height: 80px
+    background-color: #131313
+
+.header__menu
+    display: flex
+
+.header__logo-img
+    width: 104px
+    height: 39px
+    background: url(../img/header/logo1.png)
+    background-repeat: no-repeat
+
+.header__container
+    font-family: 'Montserrat', sans-serif
+    font-size: 14px
+    margin-bottom: -1px
+
+.navbar
+    padding-top: 0
+    padding-bottom: 0
+    width: 100%
+    background-color: #343a40
+
+.nav-link
+    padding: 20px 0
+    text-align: center
+    color: #fff
+    font-weight: 500;
+    &:hover
+        color: #7d41ee
+
+.user-entry
+    display: flex
+    align-items: center
+    color: #747373
+    font-size: 14px
+    font-weight: 400
+    margin-right: 44px
+    &:hover
+        text-decoration: none
+        color: #7d41ee
+    &::before
+        content: url('../img/header/lock.png')
+        background-repeat: no-repeat
+        width: 19px
+        height: 25px
+        margin-right: 13px
+
+.phone-link
+    display: flex
+    align-items: center
+    font-size: 14px
+    font-weight: 400
+    color: #747373
+    &:hover
+        text-decoration: none
+        color: #7d41ee
+    &::before
+        content: url('../img/header/phone.png')
+        background-repeat: no-repeat
+        width: 16px
+        height: 16px
+        margin-right: 10px
+
+
+.mobile__user-entry
+    margin-right: 22px
+
+.regist-btn
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    margin-right: 34px
+    color: #fff !important
+    background-color: #7d41ee
+    font-size: 12px
+    width: 177px
+    height: 31px
+    font-weight: 500
+    font-family: 'Montserrat', sans-serif
+    &:hover
+        background-color: #af84ff
+        box-shadow: 4px 6px 10px rgba(86, 31, 124, 0.35), 0 0 24px rgba(201, 116, 255, 0.26)
+        transition: .55s box-shadow
+        text-decoration: none
+
+@media (min-width: 992px)
+    .header__row
+        background-color: #fff
+        min-height: 60px
+        border-bottom: 1px solid #dadada
+
+    .nav-link
+        color: #010101
+
+    .navbar
+        background-color: #fff
+
+    .header__logo-img
+        width: 104px
+        height: 39px
+        background: url(../img/header/logo.png)
+        background-repeat: no-repeat
+
+    .mobile-menu__button
+        display: none
+
+    .mobile__user-entry
+        display: none
+
+    .nav
+        width: 100%
+        justify-content: space-around
+
+@media (max-width: 992px)
+    .regist-btn
+        display: none
+    
+    .user-entry
+        display: none
+
+    .phone-link
+        display: none
