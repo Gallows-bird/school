@@ -1,6 +1,5 @@
 .header__row
     min-height: 80px
-    background-color: #131313
 
 .header__menu
     display: flex
@@ -14,19 +13,25 @@
 .header__container
     font-family: 'Montserrat', sans-serif
     font-size: 14px
-    margin-bottom: -1px
+    background-color: #131313
+    width: 100%
+
+.nav-container
+    background-color: #343a40
 
 .navbar
     padding-top: 0
     padding-bottom: 0
     width: 100%
-    background-color: #343a40
+    font-family: 'Montserrat', sans-serif
 
 .nav-link
+    font-size: 13px
+    line-height: 19px;
     padding: 20px 0
     text-align: center
     color: #fff
-    font-weight: 500;
+    font-weight: 500
     &:hover
         color: #7d41ee
 
@@ -34,8 +39,8 @@
     display: flex
     align-items: center
     color: #747373
-    font-size: 14px
-    font-weight: 400
+    font-size: 12px
+    font-weight: 500
     margin-right: 44px
     &:hover
         text-decoration: none
@@ -51,7 +56,7 @@
     display: flex
     align-items: center
     font-size: 14px
-    font-weight: 400
+    font-weight: 500
     color: #747373
     &:hover
         text-decoration: none
@@ -93,15 +98,20 @@
 
 @media (min-width: 992px)
     .header__row
-        background-color: #fff
         min-height: 60px
+
+    .header__container
+        background-color: #fff
         border-bottom: 1px solid #dadada
 
     .nav-link
         color: #010101
+        
+    .nav-container
+        background-color: #fff
 
     .navbar
-        background-color: #fff
+        min-height: 60px;
 
     .header__logo-img
         width: 104px
@@ -128,3 +138,9 @@
 
     .phone-link
         display: none
+
+// Обнуляем отступы для вложенного контейнера
+.container-fluid .container
+    padding-left: 0
+    padding-right: 0
+// 
