@@ -427,6 +427,13 @@
 
 @media (max-width: 992px) {
   .about {
+    background: none;
+    background-color: #f3f0f9;
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
     display: none;
   }
 }
@@ -553,7 +560,7 @@
   max-width: 140px;
   text-align: center;
   margin-top: 15px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .counts__circle {
@@ -664,5 +671,97 @@
   }
   .period__right {
     margin-top: 40px;
+  }
+}
+
+.call {
+  font-family: 'Roboto', sans-serif;
+  background: url("../img/call/block.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.call__title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.call__subtitle {
+  font-size: 12px;
+  font-weight: 300;
+  color: #735ba4;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.call-phone-inp {
+  border-radius: 20px;
+  width: 393px;
+  height: 41px;
+  padding-left: 23px;
+  background-color: #fff;
+  border: none;
+}
+
+.call__btn {
+  width: 153px;
+  border: none;
+  height: 41px;
+  -webkit-box-shadow: 4px 6px 46px #b02ee6;
+          box-shadow: 4px 6px 46px #b02ee6;
+  border-radius: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  background-color: #8548f6;
+}
+
+.call__btn:hover {
+  background-color: #af84ff;
+  -webkit-box-shadow: 4px 6px 10px rgba(86, 31, 124, 0.35), 0 0 24px rgba(201, 116, 255, 0.26);
+          box-shadow: 4px 6px 10px rgba(86, 31, 124, 0.35), 0 0 24px rgba(201, 116, 255, 0.26);
+  -webkit-transition: .55s box-shadow;
+  -o-transition: .55s box-shadow;
+  transition: .55s box-shadow;
+}
+
+.call__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .call__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .call-phone-inp {
+    max-width: 290px;
+    margin-bottom: 35px;
+  }
+  .call__btn {
+    width: 170px;
+  }
+  .call {
+    background-position: 70% 70%;
   }
 }

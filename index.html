@@ -153,7 +153,7 @@
         <section class="about">
             <div class="container about__container">
                 <div class="row about__row justify-content-end">
-                    <div class="col-6 about__col">
+                    <div class="col col-md-11 col-lg-6 about__col">
                         <div class="about__title">
                             <span class="about__title-sup">Почему нашу онлайн - академию</span>
                             <span class="about__title-sub">выбирают сотни предпринимателей?</span>
@@ -246,8 +246,8 @@
                     </button>
                 </div>
                 <div class="col-lg-7 period__right">
-                    <div class="row">
-                        <div class="col-lg-4 counts__block">
+                    <div class="row counts__row justify-content-around">
+                        <div class="col-lg-4 col-md-3 col-sm-4 counts__block">
                             <div class="counts__circle">
                                 <img class="circle-img" src="img/period/ellips1.png" alt="">
                                 <span class="counts__stream">1</span>
@@ -255,7 +255,7 @@
                             </div>
                             <p class="circle__label">Еженедельный стрим</p>
                         </div>
-                        <div class="col-lg-4 counts__block">
+                        <div class="col-lg-4 col-md-3 col-sm-4 counts__block">
                             <div class="counts__circle">
                                 <img class="circle-img" src="img/period/ellips1.png" alt="">
                                 <span class="counts__work">72</span>
@@ -263,7 +263,7 @@
                             </div>
                             <p class="circle__label">Выполнение домашних заданий</p>
                         </div>
-                        <div class="col-lg-4 counts__block">
+                        <div class="col-lg-4 col-md-3 col-sm-4 counts__block">
                             <div class="counts__circle">
                                 <img class="circle-img" src="img/period/ellips1.png" alt="">
                                 <span class="counts__course">30</span>
@@ -271,8 +271,8 @@
                             </div>
                             <p class="circle__label">Изучение любого курса в академии</p>
                         </div>
-                        <div class="col">
-                            <p class="counts__fn d-none d-lg-block"><span class="sup-star">*</span>Наши курсы можно
+                        <div class="col d-none d-lg-block">
+                            <p class="counts__fn"><span class="sup-star">*</span>Наши курсы можно
                                 совмещать с любым видом работы, а так же иметь возможность
                                 получать допольнительное образование помимо нашего</p>
                         </div>
@@ -302,6 +302,28 @@
                             <p class="amt__value">10 млн +</p>
                             <p class="amt__text">Заработок выпускников <br>digital-академии</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="call">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-md-11 col-lg-8 col-xl-7">
+                        <p class="call__title">
+                            Знания которые вы получите у нас в Digital - академии <br> улучшат ход вашего бизнеса в разы
+                        </p>
+                        <p class="call__subtitle">* Ваша заявка не обязывает вас к покупке курса, прежде с вами
+                            созвонится менеджер
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-7 col-md-10 col-lg-8 col-xl-7">
+                        <form action="mail.php" method="POST" id="call-form" class="call__form">
+                            <input type="tel" id="call-phone" name="phone" class="inp call-phone-inp" placeholder="+7(">
+                            <button class="call__btn" type="submit">Заказать звонок</button>
+                        </form>
                     </div>
                 </div>
             </div>
