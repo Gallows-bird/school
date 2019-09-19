@@ -1,4 +1,5 @@
 .feedback
+    font-family: 'Roboto', sans-serif;
     position: relative
     overflow: hidden
     padding-bottom: 200px
@@ -7,8 +8,8 @@
     opacity: 0.1
     position: absolute
     width: 650px
-    top: -150px
-    left: -100px
+    top: -185px
+    left: -140px
     z-index: 4
     
 
@@ -19,6 +20,23 @@
     position: relative
     max-width: 390px
     height: auto
+
+.feedback__title 
+    font-size: 36px
+    font-weight: 600
+    margin-top: 220px
+    margin-bottom: 30px
+
+.feedback__text
+    font-size: 14px
+    line-height: 21px
+    font-weight: 400
+    margin-bottom: 30px
+
+.feedback__text-sub
+    font-size: 11px
+    color: #b5a8d9
+    margin-bottom: 30px
 
 .vk
     display: flex
@@ -36,8 +54,24 @@
         box-shadow: 0 15px 18px rgba(151, 30, 221, 0.43)
         background-color: #a97bff
 
+.feedback__row
+    justify-content: space-between
+
 .feedback__left-col
     position: relative
+
+.feedback-bg-left
+    position: absolute
+    width: 600px
+    opacity: 0.1
+    top: -350px
+    right: -350px
+    z-index: 1
+
+.feedback__phone-img-mobile
+    max-width: 220px
+    position: relative
+    z-index: 2
 
 .whatsapp
     width: 48px
@@ -57,6 +91,10 @@
 
 .social
     display: flex
+
+.feedback__left-mobile
+    position: relative
+    text-align: center
 
 .telegram
     width: 48px
@@ -80,7 +118,6 @@
     box-shadow: 9px 12px 18px rgba(151, 30, 221, 0.22)
     background-color: #8548f6
     display: flex
-    margin-right: 20px
     align-items: center
     justify-content: center
     -moz-border-radius: 50px
@@ -89,3 +126,27 @@
     &:hover
         box-shadow: 0 15px 18px rgba(151, 30, 221, 0.43)
         background-color: #a97bff
+
+@media (max-width: 768px)
+    .feedback__title
+        margin-top: 76px
+        font-size: 30px
+
+    .feedback__text
+        font-size: 16px
+        margin-bottom: 20px
+
+    .social
+        justify-content: center
+
+    .feedback__row
+        justify-content: center
+
+    .feedback__text-sub
+        margin-bottom: 60px
+
+    .feedback__left-mobile
+        margin-bottom: 140px
+
+    .feedback__row
+    justify-content: center
