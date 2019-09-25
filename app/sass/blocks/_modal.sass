@@ -1,0 +1,100 @@
+.modal-content
+    border-radius: 0
+    font-family: 'Montserrat', sans-serif;
+    border: none
+
+.close-modal
+    width: 39px
+    height: 39px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    position: absolute
+    top: -13px
+    right: -13px
+    background-color: #fff !important
+    opacity: 1
+    box-shadow: 0px 7px 7px 0px rgba(110, 109, 110, 0.23)
+    &:hover
+        opacity: 1 !important
+    &:focus
+        opacity: 1 !important
+   
+.close-modal-icon
+    display: inline-block
+    font-weight: 400
+    color: #7e6c9f
+    padding-bottom: 5px
+    margin: 0 auto
+
+.modal-details-text
+    font-size: 12px
+    line-height: 17px
+    font-weight: 500
+    text-align: center
+    margin: 0
+
+@media (min-width: 576px)
+    #details .modal-dialog
+        max-width: 540px !important
+
+.modal-details-tel
+    font-size: 19px
+    line-height: 30px
+    font-weight: 600
+    color: #715ab3
+    margin: 0
+    padding: 30px 0
+
+.modal-body-details
+    padding: 60px
+    display: flex
+    background: url('../img/modal/2/bg-modal.svg') no-repeat 140% 0
+
+.modal-details-sub-text
+    font-size: 11px
+    line-height: 21px
+    color: #737373
+    margin: 0
+    padding-bottom: 20px
+
+.modal-details-input
+    border: 1px solid #d2d2d2
+    border-radius: 50px
+    width: 100%
+    max-width: 385px
+    padding: 12px 30px
+    
+
+.modal-details-form
+    position: relative
+
+.modal-details-btn
+    width: 100%
+    max-width: 138px
+    padding: 
+        left: 30px
+        right: 30px
+    background-color: #8548f6
+    text-align: center
+    border-radius: 50px
+    border: none
+    font-size: 11px
+    line-height: 21px
+    color: #fff
+    position: absolute
+    top: 0
+    right: 0
+    height: 50px
+    
+.modal-details-bg
+    top: 0
+    right: 0
+    overflow: hidden
+    position: absolute
+    opacity: 0.1
+
+@media (max-width: 768px)
+    .modal-body-details
+        padding: 20px
