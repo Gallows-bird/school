@@ -14,20 +14,103 @@
         href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
         rel="stylesheet">
 
-    <!-- <link
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
-        rel="stylesheet"> -->
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
-    
+
 
 </head>
 
 <body>
-
+    <div class="modal fade" id="details" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-content-details">
+                <div class="modal-body modal-body-details">
+                    <div class="container-fluid">
+                        <button class="close close-modal" data-dismiss="modal"><span
+                                class="close-modal-icon">x</span></button>
+                        <p class="modal-details-text">Для уточнения подробностей можете позвонить по контактному номеру
+                            руководству и задать интересующие Вас вопросы!</p>
+                        <p class="modal-details-tel text text-center">+7 (982) 13-93-119</p>
+                        <p class="modal-details-sub-text text-center">Либо заполнить форму для обратного звонка</p>
+                        <form class="modal-details-form">
+                            <input class="modal-details-input" type="tel" id="details-inp" placeholder="+7(">
+                            <button class="modal-details-btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="callback" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-content-callback">
+                <div class="modal-body modal-body-callback">
+                    <div class="container-fluid">
+                        <button class="close close-modal" data-dismiss="modal"><span
+                                class="close-modal-icon">x</span></button>
+                        <p class="modal-callback-text text-center">Введите свой контактный номер, чтобы наш менеджер Вам
+                            перезвонил</p>
+                        <form class="modal-callback-form d-flex flex-column align-items-center">
+                            <input class="modal-callback-input" type="tel" id="callback-inp" placeholder="+7(">
+                            <button class="modal-callback-btn modal-btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="blank" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-content-blank">
+                <div class="modal-body modal-body-blank">
+                    <div class="container-fluid">
+                        <button class="close close-modal" data-dismiss="modal"><span
+                                class="close-modal-icon">x</span></button>
+                        <div class="row">
+                            <div class="col-6 modal-blank-bg d-none d-md-block"></div>
+                            <div class="col-md-6 modal-blank-cont d-flex flex-column">
+                                <p class="blank-title">Заполнение анкеты</p>
+                                <p class="blank-text">Заполните форму ученика для того чтобы встать в очередь на курс и
+                                    успеть получить горячие предложения!</p>
+                                <form class="modal-blank-form d-flex flex-column">
+                                    <label class="name-label blank-label" for="blank-name">Ваше ФИО</label>
+                                    <input class="blank-name-inp blank-inp" type="text" id="blank-name">
+                                    <label class="contact-label blank-label" for="blank-contact">Контакнтый номер
+                                        телефона</label>
+                                    <input class="blank-contact-inp blank-inp" type="phone" id="blank-contact">
+                                    <label class="mail-label blank-label" for="blank-mail">E-mail адрес <span>(не
+                                            обязательно)</span></label>
+                                    <input class="blank-mail-inp blank-inp" type="email" id="blank-mail">
+                                    <button class="modal-blank-btn modal-btn" type="submit">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="success" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-content-success">
+                <div class="modal-body modal-body-success">
+                    <button class="close close-modal" data-dismiss="modal">
+                        <span class="close-modal-icon">x</span>
+                    </button>
+                    <div class="container-fluid">
+                        <img class="mx-auto d-block" src="../img/modal/3/icons.png" alt="">
+                        <p class="success-title text-center">Анкета отправлена!</p>
+                        <p class="success-text text-center">Наш менеджер свяжется с вами в ближайшее время для уточнения
+                            деталей!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="header__container">
         <div class="container">
             <div class="row header__row align-items-center">
@@ -111,67 +194,16 @@
                                 </g>
                             </g>
                         </svg>
-                            <div class="promo__logo">
-                                <svg class="promo-mobile" width="92" height="125" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 65.66 82.05">
-                                    <defs>
-                                        <style>
-                                            .cls-m1 {
-                                                fill: #fff;
-                                            }
-
-                                            .cls-m2 {
-                                                fill: none;
-                                                stroke: #fff;
-                                                stroke-miterlimit: 10;
-                                                stroke-width: 6px;
-                                            }
-                                        </style>
-                                    </defs>
-                                    <title>Слой 1</title>
-                                    <g id="Слой_2" data-name="Слой 2">
-                                        <g id="Слой_1-2" data-name="Слой 1">
-                                            <path class="cls-m1"
-                                                d="M54.67,30.43a2.62,2.62,0,0,0,2.68-2.54L58,3.58a2.61,2.61,0,0,0-5.22-.15l-.68,24.31a2.63,2.63,0,0,0,2.54,2.69Z" />
-                                            <rect class="cls-m1" x="33.53" y="0.65" width="5.01" height="4.66" rx="2.33"
-                                                ry="2.33" transform="translate(7.2 24.81) rotate(-41.85)" />
-                                            <path class="cls-m1"
-                                                d="M65.65,51.45a.92.92,0,0,0,0-.16c-2.2-1.09-3.61-2.88-5.08-4.36a26,26,0,0,1,.06,4.2A27.52,27.52,0,0,1,21,74.18a27.5,27.5,0,0,1-7-45.33,25.21,25.21,0,0,1,3.3-2.6C15.17,26,12.9,26.07,10.67,25l-.12.11a32.63,32.63,0,0,0,8.24,53.61A32.63,32.63,0,0,0,65.65,51.45Z" />
-                                            <rect class="cls-m1" x="11.59" y="12.25" width="25.25" height="5.13"
-                                                rx="2.56" ry="2.56" transform="translate(-3.38 21.46) rotate(-45)" />
-                                            <rect class="cls-m1" x="40.19" y="20.34" width="45.81" height="5.12"
-                                                rx="2.56" ry="2.56" transform="translate(40.19 86) rotate(-90)" />
-                                            <circle class="cls-m2" cx="33.48" cy="48.25" r="21.27" />
-                                        </g>
-                                    </g>
-                                </svg>
-                                <img class="promo-desk" src="img/promo/main_logo.png" alt="">
-                            </div>
-                            <p class="promo__title">
-                                Первая digital-академия для предпринимателей
-                            </p>
-                            <p class="promo__slogan">
-                                С нами твоя цель будет достигнута!
-                            </p>
-                            <button class="promo__btn" data-toggle="modal" data-target="details">
-                                <span class="promo__btn-text">Узнать подробности</span>
-                                <img src="img/promo/main-arrow.png" alt="">
-                            </button>
-                            <button class="promo__btn-call">
-                                <span class="promo__btn-call-text">Заказать звонок</span>
-                            </button>
-                    </div>
-                    <div class="col-lg-4 d-none d-lg-block promo__right-inner">
-                            <img class="note-img" src="img/promo/note.png" alt="">
-                            <svg class="bg-logo-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.66 82.05">
+                        <div class="promo__logo">
+                            <svg class="promo-mobile" width="92" height="125" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 65.66 82.05">
                                 <defs>
                                     <style>
-                                        .cls-b1 {
+                                        .cls-m1 {
                                             fill: #fff;
-    
                                         }
-    
-                                        .cls-b2 {
+
+                                        .cls-m2 {
                                             fill: none;
                                             stroke: #fff;
                                             stroke-miterlimit: 10;
@@ -182,20 +214,71 @@
                                 <title>Слой 1</title>
                                 <g id="Слой_2" data-name="Слой 2">
                                     <g id="Слой_1-2" data-name="Слой 1">
-                                        <path class="cls-b1"
+                                        <path class="cls-m1"
                                             d="M54.67,30.43a2.62,2.62,0,0,0,2.68-2.54L58,3.58a2.61,2.61,0,0,0-5.22-.15l-.68,24.31a2.63,2.63,0,0,0,2.54,2.69Z" />
-                                        <rect class="cls-b1" x="33.53" y="0.65" width="5.01" height="4.66" rx="2.33"
+                                        <rect class="cls-m1" x="33.53" y="0.65" width="5.01" height="4.66" rx="2.33"
                                             ry="2.33" transform="translate(7.2 24.81) rotate(-41.85)" />
-                                        <path class="cls-b1"
+                                        <path class="cls-m1"
                                             d="M65.65,51.45a.92.92,0,0,0,0-.16c-2.2-1.09-3.61-2.88-5.08-4.36a26,26,0,0,1,.06,4.2A27.52,27.52,0,0,1,21,74.18a27.5,27.5,0,0,1-7-45.33,25.21,25.21,0,0,1,3.3-2.6C15.17,26,12.9,26.07,10.67,25l-.12.11a32.63,32.63,0,0,0,8.24,53.61A32.63,32.63,0,0,0,65.65,51.45Z" />
-                                        <rect class="cls-b1" x="11.59" y="12.25" width="25.25" height="5.13" rx="2.56"
+                                        <rect class="cls-m1" x="11.59" y="12.25" width="25.25" height="5.13" rx="2.56"
                                             ry="2.56" transform="translate(-3.38 21.46) rotate(-45)" />
-                                        <rect class="cls-b1" x="40.19" y="20.34" width="45.81" height="5.12" rx="2.56"
+                                        <rect class="cls-m1" x="40.19" y="20.34" width="45.81" height="5.12" rx="2.56"
                                             ry="2.56" transform="translate(40.19 86) rotate(-90)" />
-                                        <circle class="cls-b2" cx="33.48" cy="48.25" r="21.27" />
+                                        <circle class="cls-m2" cx="33.48" cy="48.25" r="21.27" />
                                     </g>
                                 </g>
                             </svg>
+                            <img class="promo-desk" src="img/promo/main_logo.png" alt="">
+                        </div>
+                        <p class="promo__title">
+                            Первая digital-академия для предпринимателей
+                        </p>
+                        <p class="promo__slogan">
+                            С нами твоя цель будет достигнута!
+                        </p>
+                        <button class="promo__btn" type="button" data-toggle="modal" data-target="#details">
+                            <span class="promo__btn-text">Узнать подробности</span>
+                            <img src="img/promo/main-arrow.png" alt="">
+                        </button>
+                        <button class="promo__btn-call" type="button" data-toggle="modal" data-target="#callback">
+                            <span class="promo__btn-call-text">Заказать звонок</span>
+                        </button>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block promo__right-inner">
+                        <img class="note-img" src="img/promo/note.png" alt="">
+                        <svg class="bg-logo-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.66 82.05">
+                            <defs>
+                                <style>
+                                    .cls-b1 {
+                                        fill: #fff;
+
+                                    }
+
+                                    .cls-b2 {
+                                        fill: none;
+                                        stroke: #fff;
+                                        stroke-miterlimit: 10;
+                                        stroke-width: 6px;
+                                    }
+                                </style>
+                            </defs>
+                            <title>Слой 1</title>
+                            <g id="Слой_2" data-name="Слой 2">
+                                <g id="Слой_1-2" data-name="Слой 1">
+                                    <path class="cls-b1"
+                                        d="M54.67,30.43a2.62,2.62,0,0,0,2.68-2.54L58,3.58a2.61,2.61,0,0,0-5.22-.15l-.68,24.31a2.63,2.63,0,0,0,2.54,2.69Z" />
+                                    <rect class="cls-b1" x="33.53" y="0.65" width="5.01" height="4.66" rx="2.33"
+                                        ry="2.33" transform="translate(7.2 24.81) rotate(-41.85)" />
+                                    <path class="cls-b1"
+                                        d="M65.65,51.45a.92.92,0,0,0,0-.16c-2.2-1.09-3.61-2.88-5.08-4.36a26,26,0,0,1,.06,4.2A27.52,27.52,0,0,1,21,74.18a27.5,27.5,0,0,1-7-45.33,25.21,25.21,0,0,1,3.3-2.6C15.17,26,12.9,26.07,10.67,25l-.12.11a32.63,32.63,0,0,0,8.24,53.61A32.63,32.63,0,0,0,65.65,51.45Z" />
+                                    <rect class="cls-b1" x="11.59" y="12.25" width="25.25" height="5.13" rx="2.56"
+                                        ry="2.56" transform="translate(-3.38 21.46) rotate(-45)" />
+                                    <rect class="cls-b1" x="40.19" y="20.34" width="45.81" height="5.12" rx="2.56"
+                                        ry="2.56" transform="translate(40.19 86) rotate(-90)" />
+                                    <circle class="cls-b2" cx="33.48" cy="48.25" r="21.27" />
+                                </g>
+                            </g>
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -290,7 +373,7 @@
                     </div>
                     <p class="period__text">Digital-академия B-First, это прежде всего организация которая заботится о
                         вашем времени и возможностях.</p>
-                    <button class="period__btn d-none d-lg-block">
+                    <button class="period__btn d-none d-lg-block" data-toggle="modal" data-target="#blank">
                         Начать занятия
                         <img class="period__btn-icon" src="img/period/right-arrow.png" alt="">
                     </button>
@@ -626,10 +709,11 @@
                                     <p class="any-questions__title">У вас возник другой вопрос?</p>
                                     <p class="any-questions__text">Задайте его нам на почту и мы незамедлительно ответим
                                         на него и внемём на наш сайт!</p>
-                                    <form action="mail.php" method="POST" id="any-questions-form">
+                                    <form id="any-questions-form">
                                         <input type="text" name="question" id="question-input" placeholder="Написать"
                                             class="any-questions-input">
-                                        <button class="question-btn">Отправить</button>
+                                        <button class="question-btn" data-toggle="modal"
+                                            data-target="#success">Отправить</button>
                                     </form>
                                 </div>
                             </div>
@@ -652,7 +736,8 @@
                             сертификат, подтверждающий успешное завершение обучения! Также у вас есть шансы стать лучшим
                             учеником потока и получить приз от специалиста для свеого бизнеса!</p>
                         <img class="prizes__img-mobile mx-auto d-lg-none" src="img/prizes/prize.png" alt="">
-                        <button class="prizes__btn mx-auto mx-lg-0"><span class="prizes__btn-text">Начать
+                        <button class="prizes__btn mx-auto mx-lg-0" data-toggle="modal" data-target="#blank"><span
+                                class="prizes__btn-text">Начать
                                 занятия</span></span><img class="prizes__btn-arrow"
                                 src="img/prizes/prizes-arrow.png"></button>
                     </div>
@@ -774,8 +859,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="js/libs.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/libs.min.js"></script>
     <script>
         $('.single-slide').slick({
             arrows: false,
@@ -786,8 +871,8 @@
         });
     </script>
     <script>
-        if(window.screen.width>=600){
-            $('.parallax-window').parallax({imageSrc: 'img/promo/main-image.png'});
+        if (window.screen.width >= 600) {
+            $('.parallax-window').parallax({ imageSrc: 'img/promo/main-image.png' });
         }
     </script>
 </body>
